@@ -1,0 +1,17 @@
+site_name: BoxHead Survivor Developer Docs
+nav:
+  - 主页: index.md
+  - 开发日志:
+    - DevLogs/test.md
+  - 开发教程:
+    - HowTos/test.md
+  - 资源汇总:
+    - Resources/test.md
+  - 会议记录:
+    - Meetings/test.md
+  - 关于: about.md
+theme: 
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
