@@ -6,12 +6,16 @@ nav:
   - 开发教程:
     - HowTos/2024-02-19-如何编辑开发者文档.md
   - 资源汇总:
-    - Resources/test.md
+    - Resources/2024-02-19-美术资源汇总.md
   - 会议记录:
-    - Meetings/test.md
+    - Meetings/2024-02-19-2024年2-3月会议记录.md
   - 关于: about.md
 theme: 
   name: material
   language: zh
   features:
     - navigation.tabs
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
