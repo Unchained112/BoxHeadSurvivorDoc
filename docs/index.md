@@ -1,17 +1,38 @@
-# Welcome to MkDocs
+# BoxHead Survivor 开发者文档
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 简介
 
-## Commands
+（中文名待定）幸存者是一个爽快的多人联机肉鸽俯视角射击游戏。
+在坠落地球的陨石打通多元宇宙位面之后，成为赏金猎人，完成探索不同位面的任务。
+选择不同角色，和你和伙伴合作或者对抗。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 目标
 
-## Project layout
+- 使用Unity，实现基础的游戏玩法。
+- 完成，完善多人联机功能。
+- 上架steam。
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 时间表
+
+### 20240210-20240310
+- [ ] 游戏基础玩法设计（本文档）
+[] 模型素材收集
+[] Unity项目搭建，版本管理等
+[] Prototype时间：202406（暂定）
+[] 基础开始界面
+[] 基础地图场景
+[] 最基础玩法
+[] 角色控制器
+[] 枪械武器，射击功能
+[] 物品，放置功能
+[] 物品/装备，数值修改
+[] 基础敌人
+[] 基础攻击
+[] 基础受伤
+[] 基础AI（寻路，攻击策略等）
+[] 基础设置界面
+
+### Demo时间：202408（暂定）
+
+### 1.0.0版本时间：202501（暂定）
+
