@@ -12,7 +12,7 @@
         <link rel="prev" href="../../DevLogs/test/">
       
       
-        <link rel="next" href="../../Resources/test/">
+        <link rel="next" href="../../Resources/2024-02-19-%E7%BE%8E%E6%9C%AF%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -222,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Resources/test/" class="md-tabs__link">
+        <a href="../../Resources/2024-02-19-%E7%BE%8E%E6%9C%AF%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/" class="md-tabs__link">
           
   
   资源汇总
@@ -240,7 +240,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Meetings/test/" class="md-tabs__link">
+        <a href="../../Meetings/2024-02-19-2024%E5%B9%B42-3%E6%9C%88%E4%BC%9A%E8%AE%AE%E8%AE%B0%E5%BD%95/" class="md-tabs__link">
           
   
   会议记录
@@ -603,11 +603,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Resources/test/" class="md-nav__link">
+      <a href="../../Resources/2024-02-19-%E7%BE%8E%E6%9C%AF%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Configuration
+    美术资源汇总
   </span>
   
 
@@ -669,11 +669,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Meetings/test/" class="md-nav__link">
+      <a href="../../Meetings/2024-02-19-2024%E5%B9%B42-3%E6%9C%88%E4%BC%9A%E8%AE%AE%E8%AE%B0%E5%BD%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Configuration
+    2024年2-3月会议记录
   </span>
   
 
@@ -834,7 +834,7 @@ docs/
     Resources/... # 资源汇总
 </code></pre>
 <h2 id="_5">编辑文档</h2>
-<p>注意，Markdown的语法所用的风格符合均为英文符合，所以编辑的时候需要注意。</p>
+<p><strong>注意</strong>，Markdown的语法所用的风格符合均为英文符合，所以编辑的时候需要注意。</p>
 <h3 id="_6">新建文档</h3>
 <p>在对应的文件夹下，以 <code>YYYY-MM-DD-文件名.md</code> 的格式新建文件。并且将其添加到 <code>mkdocs.yml</code> 文件中，对应的文件夹下：</p>
 <pre><code class="language-yaml">nav:
@@ -843,10 +843,11 @@ docs/
     - DevLogs/test.md
   - 开发教程: ...
 </code></pre>
+<p>文件名的时间以创建文件的时间为准，后续如果修改就在Commit Message中注明即可。</p>
 <p>所有的其他素材储存到 <code>docs/assets/</code> 文件夹中。添加图片以以下格式添加：</p>
-<pre><code>![Sample Image](/docs/assets/SampleImage.jpg)
+<pre><code>![Sample Image](./../assets/SampleImage.jpg)
 </code></pre>
-<p><img alt="Sample Image" src="/docs/assets/SampleImage.jpg" /></p>
+<p><img alt="Sample Image" src="../../assets/SampleImage.jpg" /></p>
 <h3 id="_7">测试与发布</h3>
 <ul>
 <li><code>mkdocs serve</code> - 本地部署测试。</li>
