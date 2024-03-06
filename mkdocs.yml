@@ -2,7 +2,7 @@ site_name: BoxHead Survivor Developer Docs
 nav:
   - 主页: index.md
   - 开发日志:
-    - DevLogs/test.md
+    - DevLogs/2024-03-03-开发者日志00.md
   - 开发教程:
     - HowTos/2024-02-19-如何编辑开发者文档.md
     - HowTos/2024-02-24-如何编辑Unity项目.md
