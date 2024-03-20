@@ -894,6 +894,10 @@
 过程中，如果主分支（main branch）更新，可以优先把主分支合并到任务分支，方便后续合并。
 在完成此任务后，合并到主分支之前请求Review。在Review确认没有问题之后，将分支合并到主分支。</p>
 <p><strong>注：项目使用Unity Version Control（PlasticSCM）版本管理，参考教程</strong>：<a href="https://zhuanlan.zhihu.com/p/661561386">PlasticSCM（Unity版本控制系统）操作指南</a></p>
+<p>编写代码时注意，不要在行尾留任何空格，不要无意义的空行。在完成编写后，可以使用Visual Studio的Format Document功能（Edit-&gt;Advanced-&gt;Format Document）来整理代码。</p>
+<p>于此同时，注意一定要尽量<strong>保持逻辑和美术分离！！！</strong></p>
+<p>多数情况下，尽量单独创建一个空GameObject，然后将模型作为子GameObject存放进去。</p>
+<p>如果需要联网，为了保证游戏内物理的稳定性，我们尽量不使用游戏的物理引擎。原因是由于例如碰撞过程中的随机误差的计算，可能导致联网游玩过程中，一个被碰撞的物品，在不同玩家间数据不同的情况。</p>
 
 
 
