@@ -840,13 +840,28 @@
 <p><img alt="LowPloy Toon Shaded" src="../../assets/DevLogs/PostProcessingTrue.png" /></p>
 <h2 id="unity-collider-rigidbody">Unity Collider &amp; RigidBody</h2>
 <ol>
-<li><a href="https://www.youtube.com/watch?v=qcGa_mzjc8Q">From Beginner to Pro: Mastering Unity's Colliders</a></li>
-</ol>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Y3xkgpCukow">Rigidbody in Unity - Everything You Need to Know</a></p>
 <p>总结：</p>
-<ol>
-<li><a href="https://www.youtube.com/watch?v=Y3xkgpCukow">Rigidbody in Unity - Everything You Need to Know</a></li>
-</ol>
+<ul>
+<li>RigidBody是赋予GameObject物理属性的Component（继承自Component class，与MonoBehavior相 同）。其背后的物理引擎是Nvidia Physix和Box2D</li>
+<li><strong>重要：选择Kinematic后，物体就不会参与物理的模拟</strong>。</li>
+<li>选择Interpolate选项可以在一定程度上帮助物体运动更流畅。</li>
+<li>对于碰撞检测，默认的Discrete选择性能最好，但在物体速度过快时（例如子弹）可能会出现碰撞没有被  检测到的情况。具体使用那种模式，可以参考文档<a href="https://   docs.unity.cn/cn/2022.3/ScriptReference/Rigidbody-collisionDetectionMode.html">Rigidbody.collisionDetectionMode</a>。对于目前   这个项目来说，尽量使用Discrete模式。</li>
+<li>利用Constraints来限制物体的移动。</li>
+<li>同时，涉及到物理模拟的代码在<code>FixUpdate()</code>中更新，保证一致性。类似的，尽量不要弄混对于Transfrom位置的直接操作和物理操作（例如施加力）。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=qcGa_mzjc8Q">From Beginner to Pro: Mastering Unity's Colliders</a></p>
 <p>总结：</p>
+<ul>
+<li>没有RigidBody的Collider被分为Static Collider，有的则被分为Dynamic Collider。</li>
+<li>可以使用Tag和Layer来设置分类碰撞检测，需要更复杂的情况可以使用Physics-&gt;Layer Collision Matrix设置。</li>
+<li>详细文档参考<a href="https://docs.unity3d.com/2022.3/Documentation/Manual/CollidersOverview.html">Introduction to collision</a>。</li>
+</ul>
+</li>
+</ol>
 
 
 
