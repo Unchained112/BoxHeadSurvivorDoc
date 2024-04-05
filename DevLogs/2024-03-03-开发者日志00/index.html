@@ -452,6 +452,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意事项
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unity-netcode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unity Netcode
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -811,6 +829,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意事项
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unity-netcode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unity Netcode
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -847,7 +883,7 @@
 <li>RigidBody是赋予GameObject物理属性的Component（继承自Component class，与MonoBehavior相 同）。其背后的物理引擎是Nvidia Physix和Box2D</li>
 <li><strong>重要：选择Kinematic后，物体就不会参与物理的模拟</strong>。</li>
 <li>选择Interpolate选项可以在一定程度上帮助物体运动更流畅。</li>
-<li>对于碰撞检测，默认的Discrete选择性能最好，但在物体速度过快时（例如子弹）可能会出现碰撞没有被  检测到的情况。具体使用那种模式，可以参考文档<a href="https://   docs.unity.cn/cn/2022.3/ScriptReference/Rigidbody-collisionDetectionMode.html">Rigidbody.collisionDetectionMode</a>。对于目前   这个项目来说，尽量使用Discrete模式。</li>
+<li>对于碰撞检测，默认的Discrete选择性能最好，但在物体速度过快时（例如子弹）可能会出现碰撞没有被  检测到的情况。具体使用那种模式，可以参考文档<a href="https://docs.unity.cn/cn/2022.3/ScriptReference/Rigidbody-collisionDetectionMode.html">Rigidbody.collisionDetectionMode</a>。对于目前   这个项目来说，尽量使用Discrete模式。</li>
 <li>利用Constraints来限制物体的移动。</li>
 <li>同时，涉及到物理模拟的代码在<code>FixUpdate()</code>中更新，保证一致性。类似的，尽量不要弄混对于Transfrom位置的直接操作和物理操作（例如施加力）。</li>
 </ul>
@@ -862,6 +898,14 @@
 </ul>
 </li>
 </ol>
+<h2 id="_2">注意事项</h2>
+<ul>
+<li><strong>实现层永不否定设计层</strong>，有的时候我过于被作为软件开发的常规思路限制了。游戏需要创意，不能因为技术上不好做就放弃一个可能非常有趣的设计。</li>
+<li>Unity老版本项目打开过程中的注意事项：Unity-&gt;Window-&gt;Package Manger-&gt;Visual Studio, Unity UI, etc。报错可能来自没有安装的Package。</li>
+</ul>
+<h2 id="unity-netcode">Unity Netcode</h2>
+<p>需要的package有Netcode for GameObjects和Multiplayer tools。</p>
+<p>其中Network Manager以Singleton的形式存在，需要添加到Scene当中。之后选择适合的Transport，对于我们项目是Unity Transport。</p>
 
 
 
